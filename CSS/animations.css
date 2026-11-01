@@ -1,0 +1,52 @@
+/* ============================================================
+   PROJECT 12:11 — ANIMATIONS
+   ============================================================ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+/* Optional: Add floating effect to planets */
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.planet-orb {
+    animation: float 4s ease-in-out infinite;
+}
+
+
+/* Make sure planets start hidden and animate in */
+
+.planet-item {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .planet-orb {
+        animation: none;
+    }
+    .animate-fade-up {
+        animation-duration: 0.01s;
+    }
+}
