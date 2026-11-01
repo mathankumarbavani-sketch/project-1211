@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0618" />
+
+    <title>12:11 — A Little Universe for Yugapriya</title>
+    <meta name="description" content="Someone created a little universe just for you." />
+
+    <!-- Open Graph / WhatsApp preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="12:11 — A Little Universe for Yugapriya" />
+    <meta property="og:description" content="Someone created a little universe just for you." />
+    <meta property="og:image" content="assets/images/og-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="12:11 — A Little Universe for Yugapriya" />
+    <meta name="twitter:description" content="Someone created a little universe just for you." />
+    <meta name="twitter:image" content="assets/images/og-preview.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- ============ CINEMATIC INTRO ============ -->
+    <section id="intro" class="intro" aria-label="Cinematic introduction">
+        <canvas id="intro-stars" class="intro-canvas" aria-hidden="true"></canvas>
+        <div class="intro-content">
+            <div class="intro-time" id="intro-time">12:11</div>
+            <p class="intro-line" id="intro-line-1">Somewhere in this universe,<br/>there is someone worth celebrating.</p>
+            <h1 class="intro-name" id="intro-name">YUGAPRIYA</h1>
+            <p class="intro-line" id="intro-line-2">Welcome to your little universe.</p>
+            <button class="btn-enter" id="btn-enter" type="button">
+      <span>Enter</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+        </div>
+        <button class="btn-skip" id="btn-skip" type="button">Skip intro</button>
+    </section>
+
+    <!-- ============ MAIN APP ============ -->
+    <main id="app" class="app" aria-hidden="true">
+
+        <!-- Universe navigation -->
+        <nav id="universe" class="universe" aria-label="Universe navigation">
+            <canvas id="universe-stars" class="universe-canvas" aria-hidden="true"></canvas>
+            <header class="universe-header">
+                <p class="universe-kicker">A little universe for</p>
+                <h2 class="universe-title">Yugapriya</h2>
+            </header>
+            <ul class="planet-list" id="planet-list">
+                <!-- injected by navigation.js -->
+            </ul>
+        </nav>
+
+        <!-- Sections container (populated in later stages) -->
+        <div id="sections"></div>
+    </main>
+
+    <!-- ============ GLOBAL AUDIO (populated in stage 7) ============ -->
+    <div id="audio-dock" class="audio-dock" hidden></div>
+
+    <script src="data/config.js"></script>
+    <script src="data/letters.js"></script>
+    <script src="data/memories.js"></script>
+    <script src="js/surprises.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
