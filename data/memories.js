@@ -38,7 +38,7 @@ const TIMELINE = [
   }
 ];
 
-/* Memory Museum — Root path-a maathiruken */
+/* Memory Museum */
 const GALLERY = [
   { src: "memory-01.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
   { src: "memory-02.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
@@ -48,13 +48,28 @@ const GALLERY = [
   { src: "memory-06.jpeg", caption: "The most beautiful soul", category: "Yugapriya" }
 ];
 
-/* Things I Admire */
+/* Things I Admire About You */
 const ADMIRE = [
-  { title: "[Quality 1]", text: "[One sentence about it. Specific.]" },
-  { title: "[Quality 2]", text: "[One sentence.]" },
-  { title: "[Quality 3]", text: "[One sentence.]" },
-  { title: "[Habit you love]", text: "[One sentence.]" },
-  { title: "[Small detail]", text: "[One sentence.]" }
+  { 
+    title: "Your Smile ✨", 
+    text: "Un smile paakumbodhu, reason illamale enakku happy ah irukkum." 
+  },
+  { 
+    title: "Your Caring Nature 🫶", 
+    text: "Nee kaattura chinna chinna akkarai kooda enakku romba special." 
+  },
+  { 
+    title: "Your Eyes 👀", 
+    text: "Un kangal la irukkura andha azhagu, vaarthaigalaala solla mudiyadhu." 
+  },
+  { 
+    title: "Your Innocence ❤️", 
+    text: "Un theriyama nee panra sila vishayangal kooda romba cute ah irukkum." 
+  },
+  { 
+    title: "Your Presence 🌸", 
+    text: "Nee pakkathula irundha podhum, ordinary moments kooda beautiful ah maaridum." 
+  }
 ];
 
 /* Constellation star messages */
