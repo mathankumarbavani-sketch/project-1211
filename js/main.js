@@ -40,9 +40,10 @@
         document.getElementById("intro").classList.add("is-hidden");
         document.getElementById("app").classList.add("is-active");
         document.getElementById("app").setAttribute("aria-hidden", "false");
-        // Trigger planet render
-        if (window.renderPlanets) window.renderPlanets();
-      });
+    // Trigger planet render
+setTimeout(() => {
+  if (window.renderPlanets) window.renderPlanets();
+}, 100);
     }
   });
 })();
