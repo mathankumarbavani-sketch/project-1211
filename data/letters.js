@@ -3,96 +3,72 @@ const LETTERS = [
     id: 1,
     theme: "Why You Are Special",
     title: "Why You Are Special",
-    body: `[Write your opening letter here.]
-
-Tell her, in your own words, what makes her different from everyone else. Be specific. Be honest. Avoid big promises — small truths land harder.`
+    body: `Nee en life-la special-ah irukkuradhukku oru particular reason illa. Un way of talking, un smile, un caring nature ellame serndhu unna romba special aakkudhu. Unna maadhiri innoru person irukka mudiyadhu.`
   },
   {
     id: 2,
     theme: "My Favourite Memory",
     title: "My Favourite Memory",
-    body: `[Describe one real memory.]
-
-Where were you? What was happening? What did she do that you still remember? End with why it still matters.`
+    body: `Un kooda pesuna ovvoru moment-um enakku oru memory dhaan. Sila conversations chinnadha irundhaalum, adha nenachup paakkumbodhu automatic-ah smile vandhudum. Andha moments thirumba kidaikkanum nu thonum.`
   },
   {
     id: 3,
     theme: "Things I Admire About You",
     title: "Things I Admire About You",
-    body: `[List 3–5 real qualities.]
-
-Not "you're amazing." Name the thing — the way she listens, the way she handles a bad day, the way she laughs at her own jokes.`
+    body: `Un smile, un kindness, un innocence, un patience, un caring nature… idhellam enakku romba pidikkum. Aana idhellathayum vida, nee unmaiyaave nee-ah irukkuradhu dhaan enakku romba special.`
   },
   {
     id: 4,
     theme: "A Moment Worth Remembering",
     title: "A Moment Worth Remembering",
-    body: `[A specific, small moment.]
-
-Something ordinary that stuck. The point is that you remembered it.`
+    body: `Sila moments namma expect pannama nadakkum, aana adhu namma manasula appadiye ninnudum. Un kooda pesi siricha andha simple moments kooda enakku marakka mudiyadha memories.`
   },
   {
     id: 5,
     theme: "Things That Make Me Smile",
     title: "Things That Make Me Smile",
-    body: `[A handful of tiny things.]
-
-The way she types. A specific phrase she uses. A face she makes. Keep it playful.`
+    body: `Un messages, un silly talks, un smile, nee panra chinna chinna things… Sometimes en mood sari illa naalum, unna pathi nenachaale smile vandhudum.`
   },
   {
     id: 6,
     theme: "What I Wish For You",
     title: "What I Wish For You",
-    body: `[Wishes that are hers, not yours.]
-
-Health, calm, good people around her, work that means something. Keep it about her life, not about what you want from it.`
+    body: `Nee life-la nenakkura ellame achieve pannanum. Un dreams ellame nijamaaganum. Evlo kashtam vandhaalum un smile mattum marandhudadha. You deserve all the happiness in this world!`
   },
   {
     id: 7,
     theme: "A Little Thank You",
     title: "A Little Thank You",
-    body: `[Thank her for something specific.]
-
-A time she was there, a thing she said, a way she showed up. Concrete thanks feel real.`
+    body: `En kooda pesuradhukkum, enna purinjikuradhukkum, un time-ah share pannuradhukkum romba thanks. Unakku adhu normal-ah irukkalam, aana enakku adhellam romba valuable.`
   },
   {
     id: 8,
     theme: "Beautiful Things About You",
     title: "Beautiful Things About You",
-    body: `[Not just appearance.]
-
-The way she treats people. The way she carries herself. The way she thinks.`
+    body: `Un face-la irukkura smile mattum azhagu illa. Un heart-la irukkura kindness-um, un words-la irukkura sweetness-um, un character-la irukkura uniqueness-um azhagu.`
   },
   {
     id: 9,
     theme: "Our Favourite Conversations",
     title: "Our Favourite Conversations",
-    body: `[Describe the kind of talks you love.]
-
-Late-night ones? Long voice notes? The pointless ones that matter most?`
+    body: `Un kooda topic illama pesuradhu kooda enakku pidikkum. Oru silly conversation-la start aagi, eppo serious-ah pesurom, eppo sirikkirom-ne theriyadhu. Honestly, I never get bored of talking to you.`
   },
   {
     id: 10,
     theme: "Respect and Care",
     title: "Respect and Care",
-    body: `[Something real about how you see her.]
-
-That you respect her judgment. That you trust her. That you care about her wellbeing, not just her presence.`
+    body: `Un feelings-ku naan eppovume value kudukkanum nu ninaikkiren. Un happiness, un dreams, un personal space ellathayum respect panradhu mukkiyam. Care na just words illa, actions-la kaattanum.`
   },
   {
     id: 11,
     theme: "A Message for Difficult Days",
     title: "A Message for Difficult Days",
-    body: `[Written for the days she'll need it.]
-
-Not a speech — a paragraph she can re-read when things feel heavy. Something grounding.`
+    body: `Unakku oru naal romba tough-ah irundha, idha mattum nyabagam vachikko. Ella naalum perfect-ah irukka vendiya avasiyam illa. Konjam rest edu, unnaiye nalla paathukko. Better days kandippa varum. ❤️`
   },
   {
     id: 12,
     theme: "One Last Birthday Letter",
     title: "One Last Birthday Letter",
-    body: `[The closing letter.]
-
-Thank her for reading all twelve. Tell her what this project was for. End warm.`
+    body: `Last-ah oru vishayam sollanum… Nee en life-la vandhadhu oru beautiful feeling. Unna pathi solla innum niraya words irukku, aana indha 12 letters-la adhellam adakka mudiyadhu. Just be happy, keep smiling, and never forget how special you are. ❤️`
   }
 ];
