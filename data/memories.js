@@ -38,14 +38,14 @@ const TIMELINE = [
   }
 ];
 
-/* Memory Museum — gallery images with captions */
+/* Memory Museum — Ellathukkum Common Caption */
 const GALLERY = [
-  { src: "assets/images/memory-01.jpg", caption: "[Caption 1]", category: "Moments" },
-  { src: "assets/images/memory-02.jpg", caption: "[Caption 2]", category: "Moments" },
-  { src: "assets/images/memory-03.jpg", caption: "[Caption 3]", category: "Smiles" },
-  { src: "assets/images/memory-04.jpg", caption: "[Caption 4]", category: "Smiles" },
-  { src: "assets/images/memory-05.jpg", caption: "[Caption 5]", category: "Places" },
-  { src: "assets/images/memory-06.jpg", caption: "[Caption 6]", category: "Places" }
+  { src: "assets/images/memory-01.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
+  { src: "assets/images/memory-02.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
+  { src: "assets/images/memory-03.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
+  { src: "assets/images/memory-04.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
+  { src: "assets/images/memory-05.jpeg", caption: "The most beautiful soul", category: "Yugapriya" },
+  { src: "assets/images/memory-06.jpeg", caption: "The most beautiful soul", category: "Yugapriya" }
 ];
 
 /* Things I Admire */
@@ -59,11 +59,6 @@ const ADMIRE = [
 
 /* Constellation star messages */
 const CONSTELLATION = [
-  "[Star message 1]",
-  "[Star message 2]",
-  "[Star message 3]",
-  "[Star message 4]",
-  "[Star message 5]",
-  "[Star message 6]",
-  "[Star message 7]"
+  "[Star message 1]", "[Star message 2]", "[Star message 3]", "[Star message 4]",
+  "[Star message 5]", "[Star message 6]", "[Star message 7]"
 ];
