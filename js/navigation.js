@@ -262,18 +262,7 @@
   };
 
   /* ---------- 4. BOOT ---------- */
-  document.addEventListener("DOMContentLoaded", () => {
-    initUniverseStars();
-    renderPlanets();
-    
-    const intro = document.getElementById("intro");
-    const app = document.getElementById("app");
-    
-    // Intha 4 lines thaan intro-a skip panni planets-a kaattum
-    if (intro && app) {
-      intro.classList.add("is-hidden");
-      app.classList.add("is-active");
-      app.setAttribute("aria-hidden", "false");
-    }
-  });
-})();
+ document.addEventListener("DOMContentLoaded", () => {
+  initUniverseStars();
+  renderPlanets();
+});
