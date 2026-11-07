@@ -21,7 +21,6 @@
     });
   }
 
-  // Open Section function (Ithula dhaan 8 sections-um irukku)
   function openSection(id) {
     const universe = document.getElementById("universe");
     const sections = document.getElementById("sections");
@@ -39,26 +38,25 @@
     else if (id === "story") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">Our Story</h2>
       <div style="text-align:left; max-width:600px; margin:0 auto;">
-      ${TIMELINE.map(t => `<div style="border-left:2px solid #e8d5a3; padding-left:1rem; margin-bottom:2rem;"><p style="color:#b8a9d9; font-size:0.8rem;">${t.date}</p><h3 style="color:white; margin-bottom:0.5rem;">${t.title}</h3><p style="color:gray; font-size:0.9rem;">${t.story}</p></div>`).join('')}
+      ${typeof TIMELINE !== 'undefined' ? TIMELINE.map(t => `<div style="border-left:2px solid #e8d5a3; padding-left:1rem; margin-bottom:2rem;"><p style="color:#b8a9d9; font-size:0.8rem;">${t.date}</p><h3 style="color:white; margin-bottom:0.5rem;">${t.title}</h3><p style="color:gray; font-size:0.9rem;">${t.story}</p></div>`).join('') : 'Timeline loading...'}
       </div>`;
     }
     else if (id === "museum") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">Memory Museum</h2>
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:1rem; max-width:800px; margin:0 auto;">
-      ${GALLERY.map(g => `<div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:2rem 1rem; text-align:center;"><p style="color:#e8d5a3; font-size:1.2rem; font-style:italic;">${g.caption}</p><p style="color:gray; font-size:0.8rem;">${g.category}</p></div>`).join('')}
+      ${typeof GALLERY !== 'undefined' ? GALLERY.map(g => `<div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:2rem 1rem; text-align:center;"><p style="color:#e8d5a3; font-size:1.2rem; font-style:italic;">${g.caption}</p><p style="color:gray; font-size:0.8rem;">${g.category}</p></div>`).join('') : 'Gallery loading...'}
       </div>`;
     }
     else if (id === "letters") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">Twelve Letters</h2>
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:1rem; max-width:800px; margin:0 auto;">
-      ${LETTERS.map(l => `<div onclick="window.openLetter(${l.id})" style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:8px; padding:1.5rem; text-align:center; cursor:pointer;"><span style="font-size:2rem;">💌</span><p style="color:white; font-size:0.9rem; margin-top:1rem;">${l.title}</p></div>`).join('')}
+      ${typeof LETTERS !== 'undefined' ? LETTERS.map(l => `<div onclick="window.openLetter(${l.id})" style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:8px; padding:1.5rem; text-align:center; cursor:pointer;"><span style="font-size:2rem;">💌</span><p style="color:white; font-size:0.9rem; margin-top:1rem;">${l.title}</p></div>`).join('') : 'Letters loading...'}
       </div>`;
     }
-    // --- BOTTOM 4 SECTIONS ADD PANNIRUKEN ---
     else if (id === "admire") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">Things I Admire</h2>
       <div style="display:flex; flex-direction:column; gap:1rem; max-width:600px; margin:0 auto; text-align:left;">
-      ${ADMIRE.map(a => `<div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:1.5rem;"><h3 style="color:#e8d5a3; margin-bottom:0.5rem;">${a.title}</h3><p style="color:white; font-size:0.9rem;">${a.text}</p></div>`).join('')}
+      ${typeof ADMIRE !== 'undefined' ? ADMIRE.map(a => `<div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:1.5rem;"><h3 style="color:#e8d5a3; margin-bottom:0.5rem;">${a.title}</h3><p style="color:white; font-size:0.9rem;">${a.text}</p></div>`).join('') : 'Admire data loading...'}
       </div>`;
     }
     else if (id === "voice") {
