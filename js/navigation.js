@@ -43,8 +43,14 @@
     }
     else if (id === "museum") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">Memory Museum</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:1rem; max-width:800px; margin:0 auto;">
-      ${typeof GALLERY !== 'undefined' ? GALLERY.map(g => `<div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:2rem 1rem; text-align:center;"><p style="color:#e8d5a3; font-size:1.2rem; font-style:italic;">${g.caption}</p><p style="color:gray; font-size:0.8rem;">${g.category}</p></div>`).join('') : 'Gallery loading...'}
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
+      ${typeof GALLERY !== 'undefined' ? GALLERY.map(g => `
+        <div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:10px; padding:1rem; text-align:center; overflow:hidden;">
+          <img src="${g.src}" alt="Memory" style="width:100%; height:220px; object-fit:cover; border-radius:8px; margin-bottom:1rem; border:1px solid rgba(232,213,163,0.3);">
+          <p style="color:#e8d5a3; font-size:1.1rem; font-style:italic; font-family:'Cormorant Garamond', serif;">${g.caption}</p>
+          <p style="color:gray; font-size:0.75rem; text-transform:uppercase; letter-spacing:1px;">${g.category}</p>
+        </div>
+      `).join('') : 'Gallery loading...'}
       </div>`;
     }
     else if (id === "letters") {
@@ -62,7 +68,7 @@
     else if (id === "voice") {
       contentHTML = `<h2 style="color:#e8d5a3; font-family:'Playfair Display', serif; text-align:center; font-size:2.5rem; margin-bottom:2rem;">A Voice From Me</h2>
       <div style="background:#1a0f2e; border:1px solid #e8d5a3; border-radius:20px; padding:2rem; display:inline-block;">
-      <audio controls style="outline:none;"><source src="${CONFIG.audio.voice}" type="audio/mpeg">Your browser does not support audio.</audio>
+      <audio controls style="outline:none;"><source src="assets/audio/message.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
       </div>`;
     }
     else if (id === "surprises") {
