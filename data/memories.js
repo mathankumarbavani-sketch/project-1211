@@ -13,19 +13,19 @@ const TIMELINE = [
     image: "story-02.jpg" 
   },
   { 
-    date: "October 24, 2025", 
+    date: "October 24, 2026", 
     title: "A memorable moment", 
     story: "The first time you came on the bike with me. When you touched me and sat, it was a whole different feeling.", 
     image: "story-03.jpg" 
   },
   { 
-    date: "October 13, 2025", 
+    date: "October 13, 2026", 
     title: "A moment that made us smile", 
     story: "The first time I kissed you.", 
     image: "story-04.jpg" 
   },
   { 
-    date: "October 2025", 
+    date: "October 24, 2026", 
     title: "A special day", 
     story: "The day you told me, 'You are my property.'", 
     image: "story-05.jpg" 
@@ -67,7 +67,7 @@ const ADMIRE = [
     text: "Un theriyama nee panra sila vishayangal kooda romba cute ah irukkum." 
   },
   { 
-    title: "Your Presence 🌸", 
+    title: "Your Presence ☘️", 
     text: "Nee pakkathula irundha podhum, ordinary moments kooda beautiful ah maaridum." 
   }
 ];
